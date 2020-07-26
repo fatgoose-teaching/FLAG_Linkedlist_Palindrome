@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class SolutionTest {
     @Test
-    public void testDeleteNode() {
+    public void testIsPalindrome() {
         int[][] inputs = {
                 {},
                 {1},
