@@ -14,11 +14,11 @@ public class SolutionTest {
                 {1},
                 {4, 5},
                 {4, 4},
-                {1,2,1},
-                {1,2,3},
-                {1,1,1},
-                {1,2,3,1},
-                {1,2,2,1},
+                {1, 2, 1},
+                {1, 2, 3},
+                {1, 1, 1},
+                {1, 2, 3, 1},
+                {1, 2, 2, 1},
         };
         boolean[] expects = {
                 true,
@@ -48,13 +48,13 @@ public class SolutionTest {
         int[][] inputs = {
                 {1},
                 {4, 5},
-                {1,2,1},
-                {1,2,3,1},
+                {1, 2, 1},
+                {1, 2, 3, 1},
         };
-        int []expects = {1, 5, 2, 3};
+        int[] expects = {1, 5, 2, 3};
         for (int i = 0; i < inputs.length; i++) {
             ListNode list = arrayToList(inputs[i]);
-           assertEquals(expects[i], Solution.middleOfList(list).val);
+            assertEquals(expects[i], Solution.middleOfList(list).val);
         }
     }
 
@@ -63,14 +63,14 @@ public class SolutionTest {
         int[][] inputs = {
                 {1},
                 {4, 5},
-                {1,2,1},
-                {1,2,3,4},
+                {1, 2, 1},
+                {1, 2, 3, 4},
         };
-        int[][] expects= {
+        int[][] expects = {
                 {1},
                 {5, 4},
-                {1,2,1},
-                {4,3,2,1},
+                {1, 2, 1},
+                {4, 3, 2, 1},
         };
         for (int i = 0; i < inputs.length; i++) {
             ListNode list = arrayToList(inputs[i]);
